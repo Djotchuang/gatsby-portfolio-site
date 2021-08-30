@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react"
+import Layout from "../../components/Layout"
+import * as styles from "../../styles/projects.module.css"
 
 export default function Projects() {
-    return (
-        <div>
-            <h2>Portfolio Projects</h2>
-        </div>
-    )
+  return (
+    <Layout>
+      <div className={styles.portfolio}>
+        <h2>Portfolio Projects</h2>
+        <h3>Projects & Websites I've Worked On</h3>
+      </div>
+    </Layout>
+  )
 }
