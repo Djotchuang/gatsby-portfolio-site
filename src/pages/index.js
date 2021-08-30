@@ -15,6 +15,7 @@ export default function Home() {
             My Portfolio Projects
           </Link>
         </div>
+        <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} />
       </section>
     </Layout>
   )
