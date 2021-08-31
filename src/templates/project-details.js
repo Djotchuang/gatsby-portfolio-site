@@ -18,7 +18,6 @@ const ProjectDetails = ({ data }) => {
             image={getImage(featuredImg)}
             alt={title + "- Project"}
           />
-          <Img />
         </div>
         <div
           className={styles.html}
@@ -32,7 +31,7 @@ const ProjectDetails = ({ data }) => {
 export default ProjectDetails
 
 export const query = graphql`
-  query ProjectDetails($slug: String) {
+  query ProjectDetailsPage($slug: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
